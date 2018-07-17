@@ -11,8 +11,6 @@ public class code134 {
         if (costsum>gassum){
             return -1;
         }
-
-        int startindex = 0;
         for(int i=0;i<gas.length;i++){
             int gasincar = 0;
             for(int j=0;j<gas.length;j++){
