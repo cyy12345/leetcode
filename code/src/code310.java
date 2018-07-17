@@ -92,6 +92,7 @@ class Solution310 {
             adj.get(edge[1]).add(edge[0]);
         }
 
+
         List<Integer> leaves = new ArrayList<>();
         for (int i = 0; i < n; ++i)
             if (adj.get(i).size() == 1) leaves.add(i);
