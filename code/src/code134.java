@@ -24,7 +24,6 @@ public class code134 {
                     break;
                 }
                 gasincar-=cost[index];
-
             }
         }
         return sum;
