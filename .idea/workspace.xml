@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5621036d-d904-4002-ac93-b1de137b317c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/src/code93.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/src/code54.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -103,14 +103,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="code93.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="code93.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/src/code93.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+            <state relative-caret-position="54">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#174#182#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="code54.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/src/code54.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#173#182#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,6 +159,7 @@
         <option value="$PROJECT_DIR$/code/src/code219.java" />
         <option value="$PROJECT_DIR$/code/src/code102.java" />
         <option value="$PROJECT_DIR$/code/src/code93.java" />
+        <option value="$PROJECT_DIR$/code/src/code54.java" />
       </list>
     </option>
   </component>
@@ -479,11 +493,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/src/code93.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        <state relative-caret-position="54">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#174#182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/src/code54.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#173#182#0" expanded="true" />
           </folding>
         </state>
       </provider>
