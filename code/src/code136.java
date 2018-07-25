@@ -1,5 +1,6 @@
 import javax.swing.table.TableCellEditor;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Hashtable;
 /*
@@ -34,7 +35,7 @@ public class code136 {
         }
         return output;
     }
-    //使用异或的方法
+    //使用异或的方法  没有用多余空间  时间复杂度O(n)
     public int singleNumber1(int[] nums){
         int a=0;
         for(int num : nums){
@@ -45,13 +46,14 @@ public class code136 {
     //使用hashtable
     public int singleNumber2(int[] nums){
 
-        Hashtable<Integer,Integer> ht= new Hashtable<Integer,Integer>();
-        for(int num :nums){
-            if(ht.contains(num)){
-                ht.remove(num);
+        HashMap<Integer,Integer> ht= new HashMap<Integer,Integer>();
+        for(int i=0;i<nums.length;i++){
+            if(ht.containsKey(nums[i])){
+                ht.remove(nums[i]);
             }
-            ht.put(num,1);
+            ht.put(nums[i],i);
         }
-        return ht.elements().nextElement();
+        return  ht.keySet().iterator().next();
+
     }
 }
