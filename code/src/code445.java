@@ -20,9 +20,9 @@ public class code445 {
             s2 = s2 + l2.val;
             l2= l2.next;
         }
-        double a = Double.parseDouble(s1);
-        double b = Double.parseDouble(s2);
-        double c = a+b;
+        Long a = Long.parseLong(s1);
+        Long b = Long.parseLong(s2);
+        Long c = a+b;
         String s3 = c+"";
         ListNode l3 = new ListNode(0);
         ListNode head = l3;
