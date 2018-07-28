@@ -55,7 +55,7 @@ public class code341 {
  */
 }
 
-public class NestedIterator implements Iterator<Integer> {
+class NestedIterator implements Iterator<Integer> {
     Stack<code341.NestedInteger> stack;
 
     public NestedIterator(List<code341.NestedInteger> nestedList) {
@@ -82,8 +82,6 @@ public class NestedIterator implements Iterator<Integer> {
                 for(int i = curr.getList().size() - 1; i >= 0; i--) {
                     stack.push(curr.getList().get(i));
                 }
-
-
             }
         }
         return false;
