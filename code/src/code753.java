@@ -16,7 +16,7 @@ public class code753 {
         String start = sb.toString();
 
         dfs(start, k);
-        ans.append(start);
+        ans.append(start); //这个apend放在dfs之后  生成的字符串是反向的
         return new String(ans);
     }
 
@@ -26,7 +26,9 @@ public class code753 {
             if (!seen.contains(nei)) {
                 seen.add(nei);
                 dfs(nei.substring(1), k);
-                ans.append(x);
+                ans.append(x); 
+                //记录下stuck的那个node，因为stuck了，要么所有出路都访问完了，要么有没访问完的，exit出来
+                // 后继续访问
             }
         }
     }
