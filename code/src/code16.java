@@ -11,8 +11,8 @@ Given array nums = [-1, 2, 1, -4], and target = 1.
 The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
      */
     public int threeSumClosest(int[] num, int target) {
-        int result = num[0] + num[1] + num[num.length - 1];
         Arrays.sort(num);
+        int result = num[0] + num[1] + num[num.length - 1];
         for (int i = 0; i < num.length - 2; i++) {
             int start = i + 1, end = num.length - 1;
             while (start < end) {
