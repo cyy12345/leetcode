@@ -1,6 +1,6 @@
 public class code105 {
     //Given preorder and inorder traversal of a tree, construct the binary tree.
-    
+
      // Definition for a binary tree node.
             public class TreeNode {
       int val;
