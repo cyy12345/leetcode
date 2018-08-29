@@ -9,6 +9,8 @@ Return the result as a list of indices representing the starting position of eac
  multiple answers, return the lexicographically smallest one.
          */
 
+        //关键的问题在于找到不能重叠的这样三个子数组，先求得这样的子数组的所有和的可能性，用一个数组存储，然后再针对这个数组
+        // 找到最大的三个子数组
         //W is an array of sums of windows
         int[] W = new int[nums.length - K + 1];
         int sum = 0;
@@ -22,18 +24,18 @@ Return the result as a list of indices representing the starting position of eac
         int best = 0;
         for (int i = 0; i < W.length; i++) {
             if (W[i] > W[best]) best = i;
-            left[i] = best;
+            left[i] = best;  //left中存储的是从左到右  取到最大值的那个index
         }
 
         int[] right = new int[W.length];
         best = W.length - 1;
         for (int i = W.length - 1; i >= 0; i--) {
             if (W[i] >= W[best]) best = i;
-            right[i] = best;
+            right[i] = best;  //right中存储的是从右到左  取到最大值的那个index
         }
 
         int[] ans = new int[]{-1, -1, -1};
-        for (int j = K; j < W.length - K; j++) {
+        for (int j = K; j < W.length - K; j++) {  //确定j 通过left和right找到最大的三个子数组
             int i = left[j - K], k = right[j + K];
             if (ans[0] == -1 || W[i] + W[j] + W[k] >
                     W[ans[0]] + W[ans[1]] + W[ans[2]]) {
